@@ -20,7 +20,7 @@ class MastermindController(val gameService: GameService) {
     val games = mutableMapOf<String, GameState>()
 
     @PostMapping("/start")
-    fun startGame() : ResponseEntity<Map<String, Any>> {
+    fun startGame(): ResponseEntity<Map<String, Any>> {
         val secretCode = gameService.generateSecretCode()
         val gameId = gameService.generateGameId()
         games[gameId] = GameState(secretCode)

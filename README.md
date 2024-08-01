@@ -5,7 +5,7 @@ providing endpoints to start a game, make guesses, and check the status of the g
 ```
 
 ## Start Game server
-Run `MastermindApplication`
+Run [start.sh](start.sh)
 
 ## Start a new game
 ```shell

@@ -8,7 +8,7 @@ class GameService {
 
     fun generateSecretCode(): List<Color> {
         val colors = Color.values().toList()
-        return List(4) {colors.random() }
+        return List(4) { colors.random() }
     }
 
     fun generateGameId(): String {
